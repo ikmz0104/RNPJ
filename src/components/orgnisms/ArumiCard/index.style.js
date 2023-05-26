@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-cardContainer: {
+  cardContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     padding: 10,
