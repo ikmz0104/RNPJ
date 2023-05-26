@@ -14,7 +14,7 @@ const TabNavigator = () => {
       <Tab.Screen
         name="Player"
         options={{
-          tabBarIcon: ({focused}) => <Icon name="home" active={focused} />,
+          tabBarIcon: ({focused}) => <Icon name="player" active={focused} />,
         }}>
         {() => (
           <TabContent
@@ -34,9 +34,9 @@ const TabNavigator = () => {
         )}
       </Tab.Screen>
       <Tab.Screen
-        name="Options"
+        name="Settings"
         options={{
-          tabBarIcon: ({focused}) => <Icon name="board" active={focused} />,
+          tabBarIcon: ({focused}) => <Icon name="setting" active={focused} />,
         }}>
         {() => <TabContent text="" />}
       </Tab.Screen>
