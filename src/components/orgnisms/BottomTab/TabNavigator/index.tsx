@@ -6,6 +6,8 @@ import {Icon} from '../../../atoms/Icon';
 import {useNavigation} from '@react-navigation/native';
 import {RoundButton} from '../../../atoms/RoundButton/index';
 import styles from './index.style';
+import ArumiCardItem from '../../ArumiCard';
+import {arumiCardArray} from '../../../../datas/index';
 
 const Tab = createBottomTabNavigator();
 
@@ -26,6 +28,24 @@ const PlayerStatsProps = () => {
       <View style={styles.buttonsContainer}>
         <RoundButton onPress={handleScanButtonPress} icon="setting" />
       </View>
+    </View>
+  );
+};
+
+const ArumiCardProps = () => {
+  return (
+    <View>
+      {arumiCardArray.map((player, index) => (
+        <ArumiCardItem
+          imageSource={player.imageSource}
+          position={player.position}
+          nationality={player.nationality}
+          age={player.age}
+          name={player.name}
+          description={player.description}
+          key={index}
+        />
+      ))}
     </View>
   );
 };
@@ -51,6 +71,7 @@ const TabNavigator = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
+                  <ArumiCardProps />
                   <PlayerStatsProps />
                 </View>
               </>
