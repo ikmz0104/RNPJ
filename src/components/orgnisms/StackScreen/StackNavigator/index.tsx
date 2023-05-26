@@ -12,7 +12,7 @@ const StackNavigator: React.VFC = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name="Tab" component={TabNavigator} />
-      <Stack.Screen name="Stack1" component={Stack1} />
+      <Stack.Screen name="PlayerStats" component={Stack1} />
     </Stack.Navigator>
   );
 };

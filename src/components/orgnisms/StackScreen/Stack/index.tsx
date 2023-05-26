@@ -5,7 +5,7 @@ import {useNavigation} from '@react-navigation/native';
 import Header from '../../../molecules/Header';
 
 /** Stack1 */
-const Stack1: React.VFC = () => {
+const Stats: React.VFC = () => {
   const navigation = useNavigation();
   const left: ReactNode = useMemo(() => {
     return (
@@ -28,10 +28,11 @@ const Stack1: React.VFC = () => {
           alignContent: 'center',
           backgroundColor: '#ff93c9',
         }}>
+        {/* TODO: 各選手の詳細画面に遷移 */}
         <Text style={{textAlign: 'center'}}>This Screen is Stack1.</Text>
       </View>
     </View>
   );
 };
 
-export default Stack1;
+export default Stats;
