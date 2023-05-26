@@ -2,7 +2,7 @@ import {useNavigation} from '@react-navigation/native';
 import React, {ReactNode, useMemo, useState} from 'react';
 import {View, Text, TouchableOpacity, Modal} from 'react-native';
 import Header from '../../../molecules/Header';
-// import LoginModal from '../../organisms/LoginModal';
+import LoginModal from '../../LoginModal';
 
 export type TabProps = {
   text: string;
@@ -41,9 +41,9 @@ const TabContent = ({text, mainView}: TabProps) => {
         visible={loginModalVisible}
         animationType="slide"
         onRequestClose={() => setLoginModalVisible(false)}>
-        {/* <View style={{flex: 1}}>
+        <View style={{flex: 1}}>
           <LoginModal onClose={() => setLoginModalVisible(false)} />
-        </View> */}
+        </View>
       </Modal>
     </View>
   );

@@ -18,7 +18,7 @@ const TabNavigator = () => {
         }}>
         {() => (
           <TabContent
-            text="Home"
+            text=""
             mainView={
               <>
                 <View
