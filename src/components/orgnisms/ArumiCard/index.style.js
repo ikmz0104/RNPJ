@@ -19,8 +19,12 @@ export default StyleSheet.create({
     flex: 1,
   },
   infoContainer: {
-    flexDirection: 'row',
+    flexDirection: 'column',
     marginBottom: 5,
+  },
+  nameDescriptionContainer: { // 追加: nameとdescriptionを囲むコンテナのスタイル
+    flexDirection: 'column',
+    alignItems: 'flex-start', // 必要に応じて調整
   },
   infoText: {
     marginRight: 10,

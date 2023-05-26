@@ -28,6 +28,8 @@ const ArumiCardItem = ({
           <Text style={styles.infoText}>{nationality}</Text>
           <Text style={styles.infoText}>{age}</Text>
         </View>
+      </View>
+      <View style={styles.nameDescriptionContainer}>
         <Text style={styles.name}>{name}</Text>
         <Text style={styles.description}>{description}</Text>
       </View>
