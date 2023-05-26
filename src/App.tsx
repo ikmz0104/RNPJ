@@ -1,8 +1,16 @@
 import React from 'react';
-import HelloWorld from './components';
+import {SafeAreaView} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import StackNavigator from './components/orgnisms/StackScreen/StackNavigator';
 
 const App = () => {
-  return <HelloWorld />;
+  return (
+    <SafeAreaView style={{flex: 1}}>
+      <NavigationContainer>
+        <StackNavigator />
+      </NavigationContainer>
+    </SafeAreaView>
+  );
 };
 
 export default App;

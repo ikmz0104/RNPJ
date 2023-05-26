@@ -1,37 +1,52 @@
-import React, {ReactNode} from 'react';
-import {useMemo} from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
+import React, {ReactNode, useMemo, useState} from 'react';
+import {View, Text, TouchableOpacity, Modal} from 'react-native';
 import Header from '../../../molecules/Header';
+// import LoginModal from '../../organisms/LoginModal';
 
-/** Tab1 */
-const Tab1: React.VFC = () => {
+export type TabProps = {
+  text: string;
+  mainView?: any;
+};
+
+const TabContent = ({text, mainView}: TabProps) => {
+  const [loginModalVisible, setLoginModalVisible] = useState(false);
   const navigation = useNavigation();
-  const right: ReactNode = useMemo(() => {
+  const left: ReactNode = useMemo(() => {
     return (
       <TouchableOpacity
         style={{padding: 10}}
         onPress={() => {
-          navigation.navigate('Stack1');
+          setLoginModalVisible(true);
         }}>
-        <Text>Hoge</Text>
+        <Text>LOGIN</Text>
       </TouchableOpacity>
     );
   }, [navigation]);
+
   return (
     <View style={{flex: 1}}>
-      <Header title="Tab1" right={right} />
+      <Header title="" left={left} />
       <View
         style={{
           flex: 1,
           justifyContent: 'center',
           alignContent: 'center',
-          backgroundColor: '#c9ff93',
+          backgroundColor: '#ffffff',
         }}>
-        <Text style={{textAlign: 'center'}}>This Screen is Tab1.</Text>
+        <Text style={{textAlign: 'center'}}>{text}</Text>
+        {mainView}
       </View>
+      <Modal
+        visible={loginModalVisible}
+        animationType="slide"
+        onRequestClose={() => setLoginModalVisible(false)}>
+        {/* <View style={{flex: 1}}>
+          <LoginModal onClose={() => setLoginModalVisible(false)} />
+        </View> */}
+      </Modal>
     </View>
   );
 };
 
-export default Tab1;
+export default TabContent;
