@@ -34,7 +34,7 @@ const TabNavigator = () => {
         )}
       </Tab.Screen>
       <Tab.Screen
-        name="Settings"
+        name="Setting"
         options={{
           tabBarIcon: ({focused}) => <Icon name="setting" active={focused} />,
         }}>
