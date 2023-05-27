@@ -27,7 +27,7 @@ const ArumiCardItem = ({
   description2,
   description3,
 }: ArumiCardItemProps) => {
-  console.log('Error: ', uniformNumber);
+  console.log('Error: ', position);
   return (
     <View style={styles.cardContainer}>
       <Image source={{uri: imageSource}} style={styles.image} />
@@ -38,17 +38,30 @@ const ArumiCardItem = ({
           </View>
         )}
       </View>
-      <View style={styles.detailsContainer}>
+      <View style={styles.gridContainer}>
+        <View style={[styles.gridRow, styles.pinkBackground]}>
+          <Text style={styles.whiteText}>{position}</Text>
+        </View>
+        <View style={[styles.gridRow, styles.whiteBackground]}>
+          <Text style={styles.gridText}>{nationality}</Text>
+        </View>
+        <View style={[styles.gridRow, styles.whiteBackground]}>
+          <Text style={styles.gridText}>{age}</Text>
+        </View>
+      </View>
+      {/* <View style={styles.detailsContainer}>
         <View style={styles.infoContainer}>
-          <Text style={styles.infoText}>{position}</Text>
+          <View style={[styles.infoItem, styles.positionContainer]}>
+            <Text style={styles.positionText}>{position}</Text>
+          </View>
           <Text style={styles.infoText}>{nationality}</Text>
           <Text style={styles.infoText}>{age}</Text>
         </View>
-      </View>
-      <View style={styles.nameDescriptionContainer}>
+      </View> */}
+      {/* <View style={styles.nameDescriptionContainer}>
         <Text style={styles.name}>{name}</Text>
         <Text style={styles.description}>{description1}</Text>
-      </View>
+      </View> */}
     </View>
   );
 };

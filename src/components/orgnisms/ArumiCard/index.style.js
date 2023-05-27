@@ -54,6 +54,39 @@ export default StyleSheet.create({
     borderColor: 'pink',
     borderWidth: 2,
   },
+  gridContainer: {
+    flex: 1,
+    flexDirection: 'column',
+  },
+  gridRow: {
+    flex: 1,
+    justifyContent: 'center',
+  },
+  pinkBackground: {
+    backgroundColor: '#E75480', // 紫よりのピンク色に設定
+  },
+  whiteBackground: {
+    backgroundColor: '#FFFFFF', // 紫よりのピンク色に設定
+    color: '#000000',
+  },
+  whiteText: {
+    color: 'white', // テキストを白色に設定
+  },
+  infoItem: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  positionContainer: {
+    backgroundColor: '#E75480',
+    borderRadius: 5,
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+  },
+  positionText: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
   nameDescriptionContainer: {
     // 追加: nameとdescriptionを囲むコンテナのスタイル
     flexDirection: 'column',
