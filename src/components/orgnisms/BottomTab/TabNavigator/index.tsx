@@ -38,11 +38,15 @@ const ArumiCardProps = () => {
       {arumiCardArray.map((player, index) => (
         <ArumiCardItem
           imageSource={player.imageSource}
+          uniformNumber={player.uniformNumber}
           position={player.position}
           nationality={player.nationality}
           age={player.age}
           name={player.name}
-          description={player.description}
+          kanaName={player.kanaName}
+          description1={player.description1}
+          description2={player.description2}
+          description3={player.description3}
           key={index}
         />
       ))}

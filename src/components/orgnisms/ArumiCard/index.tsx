@@ -4,20 +4,28 @@ import styles from './index.style';
 
 type ArumiCardItemProps = {
   imageSource: string;
+  uniformNumber?: string;
   position: string;
   nationality: string;
   age: string;
   name: string;
-  description: string;
+  kanaName: string;
+  description1: string;
+  description2?: string;
+  description3?: string;
 };
 
 const ArumiCardItem = ({
   imageSource,
+  uniformNumber,
   position,
   nationality,
   age,
   name,
-  description,
+  kanaName,
+  description1,
+  description2,
+  description3,
 }: ArumiCardItemProps) => {
   return (
     <View style={styles.cardContainer}>
@@ -31,7 +39,7 @@ const ArumiCardItem = ({
       </View>
       <View style={styles.nameDescriptionContainer}>
         <Text style={styles.name}>{name}</Text>
-        <Text style={styles.description}>{description}</Text>
+        <Text style={styles.description}>{description1}</Text>
       </View>
     </View>
   );
