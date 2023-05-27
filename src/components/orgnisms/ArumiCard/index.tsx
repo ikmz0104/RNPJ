@@ -33,7 +33,9 @@ const ArumiCardItem = ({
       <Image source={{uri: imageSource}} style={styles.image} />
       <View style={styles.overlayContainer}>
         <View style={styles.uniformNumberContainer}>
-          <Text style={styles.uniformNumber}>{uniformNumber}</Text>
+          {uniformNumber && (
+            <Text style={styles.uniformNumber}>{uniformNumber}</Text>
+          )}
         </View>
       </View>
       <View style={styles.detailsContainer}>
