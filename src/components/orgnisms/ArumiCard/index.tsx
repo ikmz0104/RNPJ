@@ -43,10 +43,10 @@ const ArumiCardItem = ({
           <Text style={styles.whiteText}>{position}</Text>
         </View>
         <View style={[styles.gridRow, styles.whiteBackground]}>
-          <Text style={styles.gridText}>{nationality}</Text>
+          <Text>{nationality}</Text>
         </View>
         <View style={[styles.gridRow, styles.whiteBackground]}>
-          <Text style={styles.gridText}>{age}</Text>
+          <Text>{age}</Text>
         </View>
       </View>
       {/* <View style={styles.detailsContainer}>
