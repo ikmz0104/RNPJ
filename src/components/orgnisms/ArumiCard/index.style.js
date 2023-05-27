@@ -11,6 +11,14 @@ export default StyleSheet.create({
     borderWidth: 3,
     marginLeft: 5,
     marginRight: 5,
+    marginBottom: -3,
+  },
+  card: {
+    borderColor: '#E75480',
+    borderWidth: 2,
+    borderRadius: 5,
+    overflow: 'hidden',
+    marginBottom: 10, // 下部の余白を追加
   },
   image: {
     width: 100,
