@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
+import ImageOverlay from 'react-native-image-overlay';
 import styles from './index.style';
 
 type ArumiCardItemProps = {
@@ -27,9 +28,15 @@ const ArumiCardItem = ({
   description2,
   description3,
 }: ArumiCardItemProps) => {
+  console.log('Error: ', uniformNumber);
   return (
     <View style={styles.cardContainer}>
       <Image source={{uri: imageSource}} style={styles.image} />
+      <View style={styles.overlayContainer}>
+        <View style={styles.uniformNumberContainer}>
+          <Text style={styles.uniformNumber}>{uniformNumber}</Text>
+        </View>
+      </View>
       <View style={styles.detailsContainer}>
         <View style={styles.infoContainer}>
           <Text style={styles.infoText}>{position}</Text>

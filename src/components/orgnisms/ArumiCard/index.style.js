@@ -17,6 +17,23 @@ export default StyleSheet.create({
     marginRight: 10,
     borderRadius: 5,
   },
+  overlayContainer: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    zIndex: 1,
+  },
+  uniformNumberContainer: {
+    backgroundColor: 'gray',
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 4,
+  },
+  uniformNumber: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: 'white',
+  },
   detailsContainer: {
     flex: 1,
     borderColor: 'pink',
@@ -28,7 +45,8 @@ export default StyleSheet.create({
     borderColor: 'pink',
     borderWidth: 2,
   },
-  nameDescriptionContainer: { // 追加: nameとdescriptionを囲むコンテナのスタイル
+  nameDescriptionContainer: {
+    // 追加: nameとdescriptionを囲むコンテナのスタイル
     flexDirection: 'column',
     alignItems: 'flex-start', // 必要に応じて調整
     borderColor: 'pink',
