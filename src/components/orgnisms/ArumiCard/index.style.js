@@ -6,10 +6,11 @@ export default StyleSheet.create({
     alignItems: 'center',
     padding: 10,
     backgroundColor: '#FFFFFF',
-    borderRadius: 5,
-    marginBottom: 10,
-    borderColor: 'pink',
-    borderWidth: 2,
+    borderRadius: 1,
+    borderColor: '#E75480', // 紫寄りのピンク色の色コードを指定します
+    borderWidth: 3,
+    marginLeft: 5,
+    marginRight: 5,
   },
   image: {
     width: 100,
