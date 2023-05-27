@@ -24,7 +24,7 @@ export default StyleSheet.create({
     zIndex: 1,
   },
   uniformNumberContainer: {
-    backgroundColor: 'gray',
+    backgroundColor: '#CCCCCC',
     paddingHorizontal: 8,
     paddingVertical: 4,
     borderRadius: 4,
