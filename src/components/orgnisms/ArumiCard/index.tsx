@@ -49,15 +49,12 @@ const ArumiCardItem = ({
               <View
                 style={[
                   styles.cell,
-                  // rowIndex === 1 && cellIndex === 1 && styles.noBorderBottom,
                   rowIndex === 0 && cellIndex === 0 && styles.cellPosition,
                   rowIndex === 0 && cellIndex === 1 && styles.cellName,
                   rowIndex === 1 && cellIndex === 0 && styles.cellNationality,
-                  rowIndex === 1 && cellIndex === 1 && styles.cellDescription,
+                  rowIndex === 1 && cellIndex === 1 && styles.cellDescription1,
                   rowIndex === 2 && cellIndex === 0 && styles.cellAge,
-                  rowIndex === 1 && cellIndex === 2 && styles.cellDescription,
-                  rowIndex === 2 && cellIndex === 1 && styles.noBorderTop,
-                  rowIndex === 2 && cellIndex === 1 && styles.noBorderBottom,
+                  rowIndex === 1 && cellIndex === 2 && styles.cellDescription2,
                   cellIndex === 0 && styles.columnA,
                   cellIndex === 1 && styles.columnB,
                 ]}

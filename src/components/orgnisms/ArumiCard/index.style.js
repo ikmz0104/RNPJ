@@ -26,6 +26,7 @@ export default StyleSheet.create({
     borderColor: '#E75480',
     borderTopWidth: 0, // 上線を消す
     borderLeftWidth: 0, // 左線を消す
+    borderRightWidth: 0, // 右線を消す
     borderBottomWidth: 0, // 下線を消す
   },
   cellNationality: {
@@ -42,6 +43,22 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 16,
     borderBottomWidth: 0, // 下線を消す
+  },
+  cellDescription1: {
+    borderColor: '#E75480',
+    borderWidth: 3,
+    fontWeight: 'bold',
+    fontSize: 16,
+    borderLeftWidth: 0, // 左線を消す
+    borderRightWidth: 0, // 右線を消す
+    borderBottomWidth: 0, // 下線を消す
+  },
+  cellDescription2: {
+    borderColor: '#E75480',
+    borderWidth: 3,
+    fontWeight: 'bold',
+    fontSize: 16,
+    borderTopWidth: 0, // 上線を消す
   },
   card: {
     borderColor: '#E75480',
@@ -154,18 +171,6 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  // noBorderBottom: {
-  //   borderBottomWidth: 0, // 下線を消す
-  // },
-  // noBorderTop: {
-  //   borderTopWidth: 0, // 上線を消す
-  // },
-  // noBorderLeft: {
-  //   borderLeftWidth: 0, // 左線を消す
-  // },
-  // noBorderRight: {
-  //   borderRightWidth: 0, // 右線を消す
-  // },
   columnA: {
     flex: 1, // A列の幅を調整するためにflexを使用
   },
@@ -203,13 +208,6 @@ export default StyleSheet.create({
   },
   descriptionText: {
     color: '#000000',
-    fontWeight: 'bold',
-    fontSize: 16,
-  },
-  cellDescription: {
-    borderColor: '#E75480',
-    borderWidth: 2,
-    borderBottomWidth: 0,
     fontWeight: 'bold',
     fontSize: 16,
   },
