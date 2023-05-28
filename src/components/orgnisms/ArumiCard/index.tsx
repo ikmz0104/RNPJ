@@ -1,7 +1,8 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
 import styles from './index.style';
-import NationalFlag from '../../atoms/NationalFlag';
+// https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+import CountryFlag from 'react-native-country-flag';
 
 type ArumiCardItemProps = {
   imageSource: string;
@@ -32,6 +33,8 @@ const ArumiCardItem = ({
     [age, description2],
   ];
 
+  console.log('Error: ', nationality);
+
   return (
     <View style={styles.cardContainer}>
       <Image source={{uri: imageSource}} style={styles.image} />
@@ -53,8 +56,8 @@ const ArumiCardItem = ({
                   rowIndex === 0 && cellIndex === 1 && styles.cellName,
                   rowIndex === 1 && cellIndex === 0 && styles.cellNationality,
                   rowIndex === 1 && cellIndex === 1 && styles.cellDescription1,
-                  rowIndex === 2 && cellIndex === 0 && styles.cellAge,
                   rowIndex === 1 && cellIndex === 2 && styles.cellDescription2,
+                  rowIndex === 2 && cellIndex === 0 && styles.cellAge,
                   cellIndex === 0 && styles.columnA,
                   cellIndex === 1 && styles.columnB,
                 ]}
@@ -73,7 +76,7 @@ const ArumiCardItem = ({
                 {rowIndex === 1 && cellIndex === 0 && (
                   <View style={styles.nationalTextContainer}>
                     <Text style={styles.nationalTitleText}>NATIONAL</Text>
-                    <NationalFlag />
+                    <CountryFlag isoCode={nationality} size={25} />
                   </View>
                 )}
                 {rowIndex === 2 && cellIndex === 0 && (
