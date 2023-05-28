@@ -12,14 +12,7 @@ type ArumiCardItemProps = {
   kanaName: string;
   description1: string;
   description2?: string;
-  description3?: string;
 };
-
-const data = [
-  ['セル1', 'セル2'],
-  ['セル3', 'セル4'],
-  ['セル5', 'セル6'],
-];
 
 const ArumiCardItem = ({
   imageSource,
@@ -31,8 +24,13 @@ const ArumiCardItem = ({
   kanaName,
   description1,
   description2,
-  description3,
 }: ArumiCardItemProps) => {
+  const data = [
+    [position, [kanaName, name]],
+    [nationality, description1],
+    [age, description2],
+  ];
+
   console.log('Error: ', position);
   return (
     <View style={styles.cardContainer}>

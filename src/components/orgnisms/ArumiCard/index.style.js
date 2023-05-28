@@ -4,7 +4,6 @@ export default StyleSheet.create({
   cardContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 10,
     backgroundColor: '#FFFFFF',
     borderRadius: 1,
     borderColor: '#E75480', // 紫寄りのピンク色の色コードを指定します

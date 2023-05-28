@@ -46,7 +46,6 @@ const ArumiCardProps = () => {
           kanaName={player.kanaName}
           description1={player.description1}
           description2={player.description2}
-          description3={player.description3}
           key={index}
         />
       ))}
