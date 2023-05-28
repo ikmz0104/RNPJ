@@ -5,12 +5,12 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: '#FFFFFF',
-    borderRadius: 1,
+    borderRadius: 3,
     borderColor: '#E75480', // 紫寄りのピンク色の色コードを指定します
     borderWidth: 3,
-    marginLeft: 5,
-    marginRight: 5,
     marginBottom: -3,
+    marginLeft: 8,
+    marginRight: 8,
   },
   card: {
     borderColor: '#E75480',

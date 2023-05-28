@@ -32,7 +32,6 @@ const ArumiCardItem = ({
     [age, description2],
   ];
 
-  console.log('Error: ', position);
   return (
     <View style={styles.cardContainer}>
       <Image source={{uri: imageSource}} style={styles.image} />
