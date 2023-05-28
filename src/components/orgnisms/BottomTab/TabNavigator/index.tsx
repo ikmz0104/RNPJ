@@ -1,7 +1,7 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import TabContent from '../Tab';
-import {View} from 'react-native';
+import {ScrollView, View} from 'react-native';
 import {Icon} from '../../../atoms/Icon';
 import {useNavigation} from '@react-navigation/native';
 import {RoundButton} from '../../../atoms/RoundButton/index';
@@ -69,8 +69,10 @@ const TabNavigator = () => {
             text=""
             mainView={
               <>
-                <ArumiCardProps />
-                {/* <PlayerStatsProps /> */}
+                <ScrollView>
+                  <ArumiCardProps />
+                  {/* <PlayerStatsProps /> */}
+                </ScrollView>
               </>
             }
           />
