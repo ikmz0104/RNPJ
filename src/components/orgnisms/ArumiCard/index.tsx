@@ -28,7 +28,7 @@ const ArumiCardItem = ({
   description2,
 }: ArumiCardItemProps) => {
   const data = [
-    [{text: position, style: styles.cellPosition}, [name, kanaName]],
+    [{text: position, style: styles.cellPositionText}, [name, kanaName]],
     [nationality, description1],
     [age, description2],
   ];

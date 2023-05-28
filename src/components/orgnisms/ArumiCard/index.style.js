@@ -123,9 +123,13 @@ export default StyleSheet.create({
   },
   positionContainer: {
     backgroundColor: '#E75480',
-    borderRadius: 5,
     paddingVertical: 4,
     paddingHorizontal: 8,
+  },
+  cellPositionText: {
+    fontSize: 20,
+    color: 'white',
+    fontWeight: 'bold',
   },
   nameDescriptionContainer: {
     // 追加: nameとdescriptionを囲むコンテナのスタイル
