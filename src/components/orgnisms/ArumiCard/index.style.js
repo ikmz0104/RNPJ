@@ -12,6 +12,22 @@ export default StyleSheet.create({
     marginLeft: 8,
     marginRight: 8,
   },
+  cellPosition: {
+    backgroundColor: '#E75480',
+    borderColor: '#E75480',
+    borderWidth: 3,
+    borderTopWidth: 0, // 上線を消す
+    borderBottomWidth: 0, // 下線を消す
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+  cellName: {
+    borderColor: '#E75480',
+    borderTopWidth: 0, // 上線を消す
+    borderLeftWidth: 0, // 左線を消す
+    borderBottomWidth: 0, // 下線を消す
+  },
   card: {
     borderColor: '#E75480',
     borderWidth: 2,
@@ -123,33 +139,23 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  noBorderBottom: {
-    borderBottomWidth: 0, // 下線を消す
-  },
-  noBorderTop: {
-    borderTopWidth: 0, // 上線を消す
-  },
-  noBorderLeft: {
-    borderLeftWidth: 0, // 左線を消す
-  },
-  noBorderRight: {
-    borderRightWidth: 0, // 右線を消す
-  },
+  // noBorderBottom: {
+  //   borderBottomWidth: 0, // 下線を消す
+  // },
+  // noBorderTop: {
+  //   borderTopWidth: 0, // 上線を消す
+  // },
+  // noBorderLeft: {
+  //   borderLeftWidth: 0, // 左線を消す
+  // },
+  // noBorderRight: {
+  //   borderRightWidth: 0, // 右線を消す
+  // },
   columnA: {
     flex: 1, // A列の幅を調整するためにflexを使用
   },
   columnB: {
     flex: 5, // B列の幅を調整するためにflexを使用
-  },
-  cellPosition: {
-    backgroundColor: '#E75480',
-    borderColor: '#E75480',
-    borderWidth: 2,
-    borderTopWidth: 0, // 上線を消す
-    borderBottomWidth: 0, // 下線を消す
-    color: 'white',
-    fontWeight: 'bold',
-    fontSize: 16,
   },
   kanaNameText: {
     color: '#E75480',
@@ -168,11 +174,6 @@ export default StyleSheet.create({
   nameTextMargin: {
     marginRight: 5,
   },
-  cellName: {
-    borderColor: '#E75480',
-    borderTopWidth: 0, // 上線を消す
-    borderLeftWidth: 0, // 左線を消す
-  },
   nationalTextContainer: {
     alignItems: 'center', // テキストを水平方向に中央に配置するために必要
   },
@@ -187,7 +188,7 @@ export default StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     fontSize: 16,
-    borderWidth: 2,
+    borderWidth: 3,
   },
   descriptionTextContainer: {
     alignItems: 'center', // テキストを水平方向に中央に配置するために必要
