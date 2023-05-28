@@ -15,7 +15,11 @@ type ArumiCardItemProps = {
   description3?: string;
 };
 
-
+const data = [
+  ['セル1', 'セル2'],
+  ['セル3', 'セル4'],
+  ['セル5', 'セル6'],
+];
 
 const ArumiCardItem = ({
   imageSource,
@@ -40,7 +44,26 @@ const ArumiCardItem = ({
           </View>
         )}
       </View>
-      <View style={styles.gridContainer}>
+      <View style={styles.figContainer}>
+        {data.map((row, rowIndex) => (
+          <View style={styles.row} key={rowIndex}>
+            {row.map((cell, cellIndex) => (
+              <View
+                style={[
+                  styles.cell,
+                  rowIndex === 1 && cellIndex === 1 && styles.noBorderBottom, // セル4の下線を消す
+                  rowIndex === 2 && cellIndex === 1 && styles.noBorderTop, // セル6の上線を消す
+                  cellIndex === 0 && styles.columnA, // A列のスタイル
+                  cellIndex === 1 && styles.columnB, // B列のスタイル
+                ]}
+                key={cellIndex}>
+                <Text>{cell}</Text>
+              </View>
+            ))}
+          </View>
+        ))}
+      </View>
+      {/* <View style={styles.gridContainer}>
         <View style={[styles.gridRow, styles.pinkBackground]}>
           <Text style={styles.whiteText}>{position}</Text>
         </View>
@@ -50,7 +73,7 @@ const ArumiCardItem = ({
         <View style={[styles.gridRow, styles.whiteBackground]}>
           <Text>{age}</Text>
         </View>
-      </View>
+      </View> */}
       {/* <View style={styles.detailsContainer}>
         <View style={styles.infoContainer}>
           <View style={[styles.infoItem, styles.positionContainer]}>
