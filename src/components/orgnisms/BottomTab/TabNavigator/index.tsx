@@ -53,12 +53,6 @@ const ArumiCardProps = () => {
   );
 };
 
-const data = [
-  ['セル1', 'セル2'],
-  ['セル3', 'セル4'],
-  ['セル5', 'セル6'],
-];
-
 /** TabNavigator */
 const TabNavigator = () => {
   return (

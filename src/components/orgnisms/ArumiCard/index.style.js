@@ -140,4 +140,7 @@ export default StyleSheet.create({
   columnB: {
     flex: 5, // B列の幅を調整するためにflexを使用
   },
+  cellPosition: {
+    backgroundColor: '#E75480',
+  },
 });
