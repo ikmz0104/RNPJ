@@ -65,7 +65,8 @@ const TabNavigator = () => {
         }}>
         {() => (
           <TabContent
-            text=""
+            title="Manchester City"
+            text="2022-23 Season Manager&Players"
             mainView={
               <>
                 <ScrollView>
@@ -82,7 +83,7 @@ const TabNavigator = () => {
         options={{
           tabBarIcon: ({focused}) => <Icon name="setting" active={focused} />,
         }}>
-        {() => <TabContent text="" />}
+        {() => <TabContent text="coming soon..." />}
       </Tab.Screen>
     </Tab.Navigator>
   );

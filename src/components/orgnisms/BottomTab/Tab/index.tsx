@@ -6,11 +6,12 @@ import LoginModal from '../../LoginModal';
 import {Icon} from '../../../atoms/Icon/index';
 
 export type TabProps = {
-  text: string;
+  title: string;
+  text?: string;
   mainView?: any;
 };
 
-const TabContent = ({text, mainView}: TabProps) => {
+const TabContent = ({title, text, mainView}: TabProps) => {
   const [loginModalVisible, setLoginModalVisible] = useState(false);
   const navigation = useNavigation();
   const right: ReactNode = useMemo(() => {
@@ -35,6 +36,7 @@ const TabContent = ({text, mainView}: TabProps) => {
           alignContent: 'center',
           backgroundColor: '#ffffff',
         }}>
+        <Text style={{textAlign: 'center'}}>{title}</Text>
         <Text style={{textAlign: 'center'}}>{text}</Text>
         {mainView}
       </View>
