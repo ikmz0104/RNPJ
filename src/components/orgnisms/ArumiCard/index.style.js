@@ -28,6 +28,21 @@ export default StyleSheet.create({
     borderLeftWidth: 0, // 左線を消す
     borderBottomWidth: 0, // 下線を消す
   },
+  cellNationality: {
+    borderColor: '#E75480',
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 16,
+    borderBottomWidth: 0, // 下線を消す
+    borderWidth: 3,
+  },
+  cellAge: {
+    borderColor: '#E75480',
+    borderWidth: 3,
+    fontWeight: 'bold',
+    fontSize: 16,
+    borderBottomWidth: 0, // 下線を消す
+  },
   card: {
     borderColor: '#E75480',
     borderWidth: 2,
@@ -183,13 +198,6 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 5,
   },
-  cellNationality: {
-    borderColor: '#E75480',
-    color: 'white',
-    fontWeight: 'bold',
-    fontSize: 16,
-    borderWidth: 3,
-  },
   descriptionTextContainer: {
     alignItems: 'center', // テキストを水平方向に中央に配置するために必要
   },
@@ -202,12 +210,6 @@ export default StyleSheet.create({
     borderColor: '#E75480',
     borderWidth: 2,
     borderBottomWidth: 0,
-    fontWeight: 'bold',
-    fontSize: 16,
-  },
-  cellAge: {
-    borderColor: '#E75480',
-    borderWidth: 2,
     fontWeight: 'bold',
     fontSize: 16,
   },
