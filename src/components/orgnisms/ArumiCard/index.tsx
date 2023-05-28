@@ -61,7 +61,15 @@ const ArumiCardItem = ({
                 ) : (
                   cell &&
                   typeof cell === 'object' &&
-                  cell.text && <Text style={cell.style}>{cell.text}</Text>
+                  cell.text && (
+                    <Text
+                      style={[
+                        cell.style,
+                        {color: 'white', fontWeight: 'bold', fontSize: 20},
+                      ]}>
+                      {cell.text}
+                    </Text>
+                  )
                 )}
               </View>
             ))}
