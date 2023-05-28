@@ -77,35 +77,21 @@ const ArumiCardItem = ({
                     <NationalFlag />
                   </View>
                 )}
+                {rowIndex === 1 && cellIndex === 1 && (
+                  <View style={styles.descriptionTextContainer}>
+                    <Text style={styles.descriptionText}>{cell}</Text>
+                  </View>
+                )}
+                {rowIndex === 2 && cellIndex === 1 && (
+                  <View style={styles.descriptionTextContainer}>
+                    <Text style={styles.descriptionText}>{cell}</Text>
+                  </View>
+                )}
               </View>
             ))}
           </View>
         ))}
       </View>
-      {/* <View style={styles.gridContainer}>
-        <View style={[styles.gridRow, styles.pinkBackground]}>
-          <Text style={styles.whiteText}>{position}</Text>
-        </View>
-        <View style={[styles.gridRow, styles.whiteBackground]}>
-          <Text>{nationality}</Text>
-        </View>
-        <View style={[styles.gridRow, styles.whiteBackground]}>
-          <Text>{age}</Text>
-        </View>
-      </View> */}
-      {/* <View style={styles.detailsContainer}>
-        <View style={styles.infoContainer}>
-          <View style={[styles.infoItem, styles.positionContainer]}>
-            <Text style={styles.positionText}>{position}</Text>
-          </View>
-          <Text style={styles.infoText}>{nationality}</Text>
-          <Text style={styles.infoText}>{age}</Text>
-        </View>
-      </View> */}
-      {/* <View style={styles.nameDescriptionContainer}>
-        <Text style={styles.name}>{name}</Text>
-        <Text style={styles.description}>{description1}</Text>
-      </View> */}
     </View>
   );
 };

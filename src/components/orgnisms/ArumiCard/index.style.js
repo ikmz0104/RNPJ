@@ -149,12 +149,12 @@ export default StyleSheet.create({
     fontSize: 16,
   },
   kanaNameText: {
-    color: 'gray',
+    color: '#E75480',
     fontSize: 16,
     fontWeight: 'bold',
   },
   nameText: {
-    color: '#E75480',
+    color: 'gray',
     fontSize: 8,
     fontWeight: 'bold',
   },
@@ -185,5 +185,15 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 16,
     borderWidth: 2,
+  },
+  descriptionTextContainer: {
+    alignItems: 'center', // テキストを水平方向に中央に配置するために必要
+  },
+  descriptionText: {
+    // borderColor: '#E75480',
+    color: '#000000',
+    fontWeight: 'bold',
+    fontSize: 16,
+    // borderWidth: 2,
   },
 });
