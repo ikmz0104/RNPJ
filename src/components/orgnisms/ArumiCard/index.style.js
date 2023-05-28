@@ -206,6 +206,7 @@ export default StyleSheet.create({
   },
   cellAge: {
     borderColor: '#E75480',
+    borderWidth: 2,
     fontWeight: 'bold',
     fontSize: 16,
   },
