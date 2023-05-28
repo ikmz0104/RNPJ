@@ -69,9 +69,7 @@ export default StyleSheet.create({
   },
   image: {
     width: 100,
-    height: 100,
-    marginRight: 10,
-    borderRadius: 5,
+    height: 150,
   },
   overlayContainer: {
     position: 'absolute',
@@ -207,8 +205,9 @@ export default StyleSheet.create({
   },
   descriptionText: {
     color: '#000000',
-    fontWeight: 'bold',
     fontSize: 16,
+    marginLeft: 2,
+    marginRight: 2,
   },
   ageTextContainer: {
     alignItems: 'center', // テキストを水平方向に中央に配置するために必要
