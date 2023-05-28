@@ -190,10 +190,20 @@ export default StyleSheet.create({
     alignItems: 'center', // テキストを水平方向に中央に配置するために必要
   },
   descriptionText: {
-    // borderColor: '#E75480',
     color: '#000000',
     fontWeight: 'bold',
     fontSize: 16,
-    // borderWidth: 2,
+  },
+  cellDescription: {
+    borderColor: '#E75480',
+    fontWeight: 'bold',
+    fontSize: 16,
+    borderWidth: 2,
+  },
+  cellAge: {
+    borderColor: '#E75480',
+    fontWeight: 'bold',
+    fontSize: 16,
+    borderWidth: 2,
   },
 });
