@@ -58,7 +58,7 @@ const ArumiCardProps = () => {
 const TabNavigator = () => {
   return (
     <Tab.Navigator
-      screenOptions={{tabBarActiveTintColor: 'red', headerShown: false}}>
+      screenOptions={{tabBarActiveTintColor: '#00acee', headerShown: false}}>
       <Tab.Screen
         name="Player"
         options={{
