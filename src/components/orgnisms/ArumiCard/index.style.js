@@ -81,11 +81,6 @@ export default StyleSheet.create({
     paddingVertical: 4,
     paddingHorizontal: 8,
   },
-  positionText: {
-    color: 'white',
-    fontWeight: 'bold',
-    fontSize: 16,
-  },
   nameDescriptionContainer: {
     // 追加: nameとdescriptionを囲むコンテナのスタイル
     flexDirection: 'column',
@@ -149,6 +144,9 @@ export default StyleSheet.create({
   cellPosition: {
     backgroundColor: '#E75480',
     borderColor: '#E75480',
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 16,
   },
   kanaNameText: {
     color: 'gray',
