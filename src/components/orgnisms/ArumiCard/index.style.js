@@ -142,5 +142,6 @@ export default StyleSheet.create({
   },
   cellPosition: {
     backgroundColor: '#E75480',
+    borderColor: '#E75480', // 枠線の色を設定
   },
 });

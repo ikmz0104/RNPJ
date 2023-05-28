@@ -50,10 +50,10 @@ const ArumiCardItem = ({
                 style={[
                   styles.cell,
                   rowIndex === 1 && cellIndex === 1 && styles.noBorderBottom,
-                  rowIndex === 2 && cellIndex === 1 && styles.noBorderTop,
+                  rowIndex === 0 && cellIndex === 0 && styles.cellPosition,
+                  rowIndex > 0 && cellIndex === 0 && styles.noBorderTop, // positionの上の枠線を消す
                   cellIndex === 0 && styles.columnA,
                   cellIndex === 1 && styles.columnB,
-                  cellIndex === 0 && rowIndex === 0 && styles.cellPosition, // positionのセルにスタイルを適用
                 ]}
                 key={cellIndex}>
                 {Array.isArray(cell) ? (
