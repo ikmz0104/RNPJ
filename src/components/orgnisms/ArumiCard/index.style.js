@@ -178,6 +178,7 @@ export default StyleSheet.create({
     color: '#E75480',
     fontSize: 16,
     fontWeight: 'bold',
+    textAlign: 'left',
   },
   nameText: {
     color: 'gray',
@@ -185,8 +186,8 @@ export default StyleSheet.create({
     fontWeight: 'bold',
   },
   nameContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    // flexDirection: 'row',
+    // alignItems: 'center',
   },
   nameTextMargin: {
     marginRight: 5,
