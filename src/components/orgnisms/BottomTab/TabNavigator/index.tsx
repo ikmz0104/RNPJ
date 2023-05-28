@@ -1,7 +1,7 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import TabContent from '../Tab';
-import {ScrollView, View} from 'react-native';
+import {ScrollView, Text, View} from 'react-native';
 import {Icon} from '../../../atoms/Icon';
 import {useNavigation} from '@react-navigation/native';
 import {RoundButton} from '../../../atoms/RoundButton/index';
@@ -54,6 +54,12 @@ const ArumiCardProps = () => {
   );
 };
 
+const data = [
+  ['セル1', 'セル2'],
+  ['セル3', 'セル4'],
+  ['セル5', 'セル6'],
+];
+
 /** TabNavigator */
 const TabNavigator = () => {
   return (
@@ -70,6 +76,29 @@ const TabNavigator = () => {
             mainView={
               <>
                 <ScrollView>
+                  <View style={styles.figContainer}>
+                    {data.map((row, rowIndex) => (
+                      <View style={styles.row} key={rowIndex}>
+                        {row.map((cell, cellIndex) => (
+                          <View
+                            style={[
+                              styles.cell,
+                              rowIndex === 1 &&
+                                cellIndex === 1 &&
+                                styles.noBorderBottom, // セル4の下線を消す
+                              rowIndex === 2 &&
+                                cellIndex === 1 &&
+                                styles.noBorderTop, // セル6の上線を消す
+                              cellIndex === 0 && styles.columnA, // A列のスタイル
+                              cellIndex === 1 && styles.columnB, // B列のスタイル
+                            ]}
+                            key={cellIndex}>
+                            <Text>{cell}</Text>
+                          </View>
+                        ))}
+                      </View>
+                    ))}
+                  </View>
                   <ArumiCardProps />
                   {/* <PlayerStatsProps /> */}
                 </ScrollView>

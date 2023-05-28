@@ -15,6 +15,8 @@ type ArumiCardItemProps = {
   description3?: string;
 };
 
+
+
 const ArumiCardItem = ({
   imageSource,
   uniformNumber,
