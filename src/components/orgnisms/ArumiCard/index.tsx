@@ -57,7 +57,8 @@ const ArumiCardItem = ({
                   rowIndex === 1 && cellIndex === 1 && styles.cellDescription,
                   rowIndex === 2 && cellIndex === 0 && styles.cellAge,
                   rowIndex === 1 && cellIndex === 2 && styles.cellDescription,
-                  rowIndex > 0 && cellIndex === 0 && styles.noBorderTop,
+                  rowIndex === 2 && cellIndex === 1 && styles.noBorderTop,
+                  rowIndex === 2 && cellIndex === 1 && styles.noBorderBottom,
                   cellIndex === 0 && styles.columnA,
                   cellIndex === 1 && styles.columnB,
                 ]}

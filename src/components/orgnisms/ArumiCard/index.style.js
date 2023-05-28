@@ -144,6 +144,9 @@ export default StyleSheet.create({
   cellPosition: {
     backgroundColor: '#E75480',
     borderColor: '#E75480',
+    borderWidth: 2,
+    borderTopWidth: 0, // 上線を消す
+    borderBottomWidth: 0, // 下線を消す
     color: 'white',
     fontWeight: 'bold',
     fontSize: 16,
@@ -196,9 +199,10 @@ export default StyleSheet.create({
   },
   cellDescription: {
     borderColor: '#E75480',
+    borderWidth: 2,
+    borderBottomWidth: 0,
     fontWeight: 'bold',
     fontSize: 16,
-    borderWidth: 2,
   },
   cellAge: {
     borderColor: '#E75480',
