@@ -173,7 +173,7 @@ export default StyleSheet.create({
   nationalTextContainer: {
     alignItems: 'center', // テキストを水平方向に中央に配置するために必要
   },
-  nationalText: {
+  nationalTitleText: {
     color: '#E75480',
     fontSize: 7,
     fontWeight: 'bold',
@@ -204,6 +204,19 @@ export default StyleSheet.create({
     borderColor: '#E75480',
     fontWeight: 'bold',
     fontSize: 16,
-    borderWidth: 2,
+  },
+  ageTextContainer: {
+    alignItems: 'center', // テキストを水平方向に中央に配置するために必要
+  },
+  ageTitleText: {
+    color: '#E75480',
+    fontSize: 7,
+    fontWeight: 'bold',
+    marginBottom: 5,
+  },
+  ageText: {
+    color: '#000000',
+    fontWeight: 'bold',
+    fontSize: 16,
   },
 });

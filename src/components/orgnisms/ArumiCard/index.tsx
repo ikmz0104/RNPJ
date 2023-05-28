@@ -73,11 +73,16 @@ const ArumiCardItem = ({
                     <Text style={styles.nameText}>{cell[1]}</Text>
                   </View>
                 )}
-
                 {rowIndex === 1 && cellIndex === 0 && (
                   <View style={styles.nationalTextContainer}>
-                    <Text style={styles.nationalText}>NATIONAL</Text>
+                    <Text style={styles.nationalTitleText}>NATIONAL</Text>
                     <NationalFlag />
+                  </View>
+                )}
+                {rowIndex === 2 && cellIndex === 0 && (
+                  <View style={styles.ageTextContainer}>
+                    <Text style={styles.ageTitleText}>AGE</Text>
+                    <Text style={styles.ageText}>{cell}</Text>
                   </View>
                 )}
                 {rowIndex === 1 && cellIndex === 1 && (
