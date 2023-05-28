@@ -6,15 +6,15 @@ export default StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#FFFFFF',
     borderRadius: 3,
-    borderColor: '#E75480', // 紫寄りのピンク色の色コードを指定します
+    borderColor: '#DF5286', // 紫寄りのピンク色の色コードを指定します
     borderWidth: 3,
     marginBottom: -3,
     marginLeft: 8,
     marginRight: 8,
   },
   cellPosition: {
-    backgroundColor: '#E75480',
-    borderColor: '#E75480',
+    backgroundColor: '#DF5286',
+    borderColor: '#DF5286',
     borderWidth: 3,
     borderTopWidth: 0, // 上線を消す
     borderBottomWidth: 0, // 下線を消す
@@ -23,14 +23,14 @@ export default StyleSheet.create({
     fontSize: 16,
   },
   cellName: {
-    borderColor: '#E75480',
+    borderColor: '#DF5286',
     borderTopWidth: 0, // 上線を消す
     borderLeftWidth: 0, // 左線を消す
     borderRightWidth: 0, // 右線を消す
     borderBottomWidth: 0, // 下線を消す
   },
   cellNationality: {
-    borderColor: '#E75480',
+    borderColor: '#DF5286',
     color: 'white',
     fontWeight: 'bold',
     fontSize: 16,
@@ -38,14 +38,14 @@ export default StyleSheet.create({
     borderWidth: 3,
   },
   cellAge: {
-    borderColor: '#E75480',
+    borderColor: '#DF5286',
     borderWidth: 3,
     fontWeight: 'bold',
     fontSize: 16,
     borderBottomWidth: 0, // 下線を消す
   },
   cellDescription1: {
-    borderColor: '#E75480',
+    borderColor: '#DF5286',
     borderWidth: 3,
     fontWeight: 'bold',
     fontSize: 16,
@@ -54,14 +54,14 @@ export default StyleSheet.create({
     borderBottomWidth: 0, // 下線を消す
   },
   cellDescription2: {
-    borderColor: '#E75480',
+    borderColor: '#DF5286',
     borderWidth: 3,
     fontWeight: 'bold',
     fontSize: 16,
     borderTopWidth: 0, // 上線を消す
   },
   card: {
-    borderColor: '#E75480',
+    borderColor: '#DF5286',
     borderWidth: 2,
     borderRadius: 5,
     overflow: 'hidden',
@@ -108,7 +108,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
   pinkBackground: {
-    backgroundColor: '#E75480', // 紫よりのピンク色に設定
+    backgroundColor: '#DF5286', // 紫よりのピンク色に設定
   },
   whiteBackground: {
     backgroundColor: '#FFFFFF', // 紫よりのピンク色に設定
@@ -122,7 +122,7 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   positionContainer: {
-    backgroundColor: '#E75480',
+    backgroundColor: '#DF5286',
     paddingVertical: 4,
     paddingHorizontal: 8,
   },
@@ -179,7 +179,7 @@ export default StyleSheet.create({
     flex: 5, // B列の幅を調整するためにflexを使用
   },
   kanaNameText: {
-    color: '#E75480',
+    color: '#DF5286',
     fontSize: 16,
     fontWeight: 'bold',
     textAlign: 'left',
@@ -200,7 +200,7 @@ export default StyleSheet.create({
     alignItems: 'center', // テキストを水平方向に中央に配置するために必要
   },
   nationalTitleText: {
-    color: '#E75480',
+    color: '#DF5286',
     fontSize: 7,
     fontWeight: 'bold',
     marginBottom: 5,
@@ -218,7 +218,7 @@ export default StyleSheet.create({
     alignItems: 'center', // テキストを水平方向に中央に配置するために必要
   },
   ageTitleText: {
-    color: '#E75480',
+    color: '#DF5286',
     fontSize: 7,
     fontWeight: 'bold',
     marginBottom: 5,
