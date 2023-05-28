@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
 import styles from './index.style';
+import NationalFlag from '../../atoms/NationalFlag';
 
 type ArumiCardItemProps = {
   imageSource: string;
@@ -52,6 +53,7 @@ const ArumiCardItem = ({
                   rowIndex === 1 && cellIndex === 1 && styles.noBorderBottom,
                   rowIndex === 0 && cellIndex === 0 && styles.cellPosition,
                   rowIndex === 0 && cellIndex === 1 && styles.cellName,
+                  rowIndex === 1 && cellIndex === 0 && styles.cellNationality,
                   rowIndex > 0 && cellIndex === 0 && styles.noBorderTop,
                   cellIndex === 0 && styles.columnA,
                   cellIndex === 1 && styles.columnB,
@@ -66,6 +68,13 @@ const ArumiCardItem = ({
                       {cell[0]}
                     </Text>
                     <Text style={styles.nameText}>{cell[1]}</Text>
+                  </View>
+                )}
+
+                {rowIndex === 1 && cellIndex === 0 && (
+                  <View style={styles.nationalTextContainer}>
+                    <Text style={styles.nationalText}>NATIONAL</Text>
+                    <NationalFlag />
                   </View>
                 )}
               </View>

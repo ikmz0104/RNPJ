@@ -170,18 +170,20 @@ export default StyleSheet.create({
     borderTopWidth: 0, // 上線を消す
     borderLeftWidth: 0, // 左線を消す
   },
-  // nationalText: {
-  //   backgroundColor: '#E75480',
-  //   color: 'white',
-  //   textAlign: 'center',
-  //   padding: 10,
-  // },
   nationalTextContainer: {
     alignItems: 'center', // テキストを水平方向に中央に配置するために必要
   },
   nationalText: {
     color: '#E75480',
-    fontSize: 16,
+    fontSize: 7,
     fontWeight: 'bold',
+    marginBottom: 5,
+  },
+  cellNationality: {
+    borderColor: '#E75480',
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 16,
+    borderWidth: 2,
   },
 });

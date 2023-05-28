@@ -12,8 +12,8 @@ const NationalFlag = () => {
 
 const styles = {
   flagImage: {
-    width: 100, // 適切なサイズに調整してください
-    height: 100,
+    width: 50, // 適切なサイズに調整してください
+    height: 25,
   },
 };
 
