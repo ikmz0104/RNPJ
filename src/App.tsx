@@ -5,7 +5,7 @@ import StackNavigator from './components/orgnisms/StackScreen/StackNavigator';
 
 const App = () => {
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#70d7ff'}}>
       <NavigationContainer>
         <StackNavigator />
       </NavigationContainer>

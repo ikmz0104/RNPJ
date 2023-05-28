@@ -34,7 +34,7 @@ const TabContent = ({title, text, mainView}: TabProps) => {
           flex: 1,
           justifyContent: 'center',
           alignContent: 'center',
-          backgroundColor: '#ffffff',
+          backgroundColor: '#70d7ff', // 水色の背景
         }}>
         <Text style={{textAlign: 'center'}}>{title}</Text>
         <Text style={{textAlign: 'center'}}>{text}</Text>

@@ -23,7 +23,7 @@ const Header: React.VFC<Props> = props => {
         height: 60,
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: '#ffffff',
+        backgroundColor: '#70d7ff',
       }}>
       <View style={{flex: 0.25}}>{left}</View>
       <Text
