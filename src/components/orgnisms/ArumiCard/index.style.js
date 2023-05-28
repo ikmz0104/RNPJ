@@ -129,10 +129,16 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   noBorderBottom: {
-    borderBottomWidth: 0, // セル4の下線を消す
+    borderBottomWidth: 0, // 下線を消す
   },
   noBorderTop: {
-    borderTopWidth: 0, // セル6の上線を消す
+    borderTopWidth: 0, // 上線を消す
+  },
+  noBorderLeft: {
+    borderLeftWidth: 0, // 左線を消す
+  },
+  noBorderRight: {
+    borderRightWidth: 0, // 右線を消す
   },
   columnA: {
     flex: 1, // A列の幅を調整するためにflexを使用
@@ -156,5 +162,14 @@ export default StyleSheet.create({
   },
   nameContainer: {
     flexDirection: 'row',
+    alignItems: 'center',
+  },
+  nameTextMargin: {
+    marginRight: 5,
+  },
+  cellName: {
+    borderColor: '#E75480',
+    borderTopWidth: 0, // 上線を消す
+    borderLeftWidth: 0, // 左線を消す
   },
 });

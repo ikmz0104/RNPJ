@@ -51,6 +51,7 @@ const ArumiCardItem = ({
                   styles.cell,
                   rowIndex === 1 && cellIndex === 1 && styles.noBorderBottom,
                   rowIndex === 0 && cellIndex === 0 && styles.cellPosition,
+                  rowIndex === 0 && cellIndex === 1 && styles.cellName,
                   rowIndex > 0 && cellIndex === 0 && styles.noBorderTop,
                   cellIndex === 0 && styles.columnA,
                   cellIndex === 1 && styles.columnB,
@@ -61,7 +62,9 @@ const ArumiCardItem = ({
                 )}
                 {Array.isArray(cell) && cellIndex === 1 && (
                   <View style={styles.nameContainer}>
-                    <Text style={styles.kanaNameText}>{cell[0]}</Text>
+                    <Text style={[styles.kanaNameText, styles.nameTextMargin]}>
+                      {cell[0]}
+                    </Text>
                     <Text style={styles.nameText}>{cell[1]}</Text>
                   </View>
                 )}
