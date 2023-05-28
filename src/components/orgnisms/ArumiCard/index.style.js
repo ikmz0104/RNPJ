@@ -205,9 +205,9 @@ export default StyleSheet.create({
   },
   descriptionText: {
     color: '#000000',
-    fontSize: 16,
-    marginLeft: 2,
-    marginRight: 2,
+    fontSize: 14,
+    marginLeft: 5,
+    marginRight: 5,
   },
   ageTextContainer: {
     alignItems: 'center', // テキストを水平方向に中央に配置するために必要
