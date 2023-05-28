@@ -26,7 +26,7 @@ const ArumiCardItem = ({
   description2,
 }: ArumiCardItemProps) => {
   const data = [
-    [{text: position, style: styles.cellPosition}, [kanaName, name]],
+    [{text: position, style: styles.cellPosition}, [name, kanaName]],
     [nationality, description1],
     [age, description2],
   ];
@@ -51,25 +51,19 @@ const ArumiCardItem = ({
                   styles.cell,
                   rowIndex === 1 && cellIndex === 1 && styles.noBorderBottom,
                   rowIndex === 0 && cellIndex === 0 && styles.cellPosition,
-                  rowIndex > 0 && cellIndex === 0 && styles.noBorderTop, // positionの上の枠線を消す
+                  rowIndex > 0 && cellIndex === 0 && styles.noBorderTop,
                   cellIndex === 0 && styles.columnA,
                   cellIndex === 1 && styles.columnB,
                 ]}
                 key={cellIndex}>
-                {Array.isArray(cell) ? (
-                  <Text>{cell[0]}</Text>
-                ) : (
-                  cell &&
-                  typeof cell === 'object' &&
-                  cell.text && (
-                    <Text
-                      style={[
-                        cell.style,
-                        {color: 'white', fontWeight: 'bold', fontSize: 20},
-                      ]}>
-                      {cell.text}
-                    </Text>
-                  )
+                {typeof cell === 'object' && cell.text && (
+                  <Text style={cell.style}>{cell.text}</Text>
+                )}
+                {Array.isArray(cell) && cellIndex === 1 && (
+                  <View style={styles.nameContainer}>
+                    <Text style={styles.kanaNameText}>{cell[0]}</Text>
+                    <Text style={styles.nameText}>{cell[1]}</Text>
+                  </View>
                 )}
               </View>
             ))}

@@ -142,6 +142,19 @@ export default StyleSheet.create({
   },
   cellPosition: {
     backgroundColor: '#E75480',
-    borderColor: '#E75480', // 枠線の色を設定
+    borderColor: '#E75480',
+  },
+  kanaNameText: {
+    color: 'gray',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  nameText: {
+    color: '#E75480',
+    fontSize: 8,
+    fontWeight: 'bold',
+  },
+  nameContainer: {
+    flexDirection: 'row',
   },
 });
