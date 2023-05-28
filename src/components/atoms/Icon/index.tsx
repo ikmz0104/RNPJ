@@ -110,7 +110,7 @@ export const Icon = ({name, active}: IconProps) => {
         width="24"
         viewBox="0 0 24 24"
         fill="none"
-        stroke={active ? 'red' : '#000000'}
+        stroke={active ? '#00acee' : '#000000'}
         strokeWidth="2">
         {icon}
       </Svg>

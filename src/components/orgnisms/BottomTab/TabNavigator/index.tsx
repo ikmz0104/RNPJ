@@ -1,7 +1,7 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import TabContent from '../Tab';
-import {View} from 'react-native';
+import {ScrollView, Text, View} from 'react-native';
 import {Icon} from '../../../atoms/Icon';
 import {useNavigation} from '@react-navigation/native';
 import {RoundButton} from '../../../atoms/RoundButton/index';
@@ -38,11 +38,14 @@ const ArumiCardProps = () => {
       {arumiCardArray.map((player, index) => (
         <ArumiCardItem
           imageSource={player.imageSource}
+          uniformNumber={player.uniformNumber}
           position={player.position}
           nationality={player.nationality}
           age={player.age}
           name={player.name}
-          description={player.description}
+          kanaName={player.kanaName}
+          description1={player.description1}
+          description2={player.description2}
           key={index}
         />
       ))}
@@ -54,7 +57,7 @@ const ArumiCardProps = () => {
 const TabNavigator = () => {
   return (
     <Tab.Navigator
-      screenOptions={{tabBarActiveTintColor: 'red', headerShown: false}}>
+      screenOptions={{tabBarActiveTintColor: '#00acee', headerShown: false}}>
       <Tab.Screen
         name="Player"
         options={{
@@ -65,8 +68,10 @@ const TabNavigator = () => {
             text=""
             mainView={
               <>
-                <ArumiCardProps />
-                {/* <PlayerStatsProps /> */}
+                <ScrollView>
+                  <ArumiCardProps />
+                  {/* <PlayerStatsProps /> */}
+                </ScrollView>
               </>
             }
           />
