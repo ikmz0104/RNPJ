@@ -167,7 +167,6 @@ export default StyleSheet.create({
   cell: {
     width: 100,
     height: 50,
-    borderWidth: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
